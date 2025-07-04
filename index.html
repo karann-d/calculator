@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="input">
+          <input type="text" id="input" placeholder="0" />
+        </div>
+        <div class="div">
+          <button type="button" onclick="clearResult()">AC</button>
+          <button type="button" onclick="clearOne()">DE</button>
+          <button type="button" onclick="appendValue('.')">.</button>
+          <button type="button" onclick="appendValue('/')" class="operator">
+            /
+          </button>
+        </div>
+        <div class="div">
+          <button type="button" onclick="appendValue('7')">7</button>
+          <button type="button" onclick="appendValue('8')">8</button>
+          <button type="button" onclick="appendValue('9')">9</button>
+          <button type="button" onclick="appendValue('*')" class="operator">
+            *
+          </button>
+        </div>
+        <div class="div">
+          <button type="button" onclick="appendValue('4')">4</button>
+          <button type="button" onclick="appendValue('5')">5</button>
+          <button type="button" onclick="appendValue('6')">6</button>
+          <button type="button" onclick="appendValue('-')" class="operator">
+            -
+          </button>
+        </div>
+        <div class="div">
+          <button type="button" onclick="appendValue('1')">1</button>
+          <button type="button" onclick="appendValue('2')">2</button>
+          <button type="button" onclick="appendValue('3')">3</button>
+          <button type="button" onclick="appendValue('+')" class="operator">
+            +
+          </button>
+        </div>
+        <div class="div">
+          <button type="button" onclick="appendValue('0')">0</button>
+          <button type="button" onclick="appendValue('00')">00</button>
+          <button type="button" onclick="appendValue('%')">%</button>
+
+          <button
+            type="button"
+            id="submit"
+            class="operator"
+            onclick="calculateResult()"
+          >
+            <span id="equaltext">=</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
